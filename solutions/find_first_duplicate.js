@@ -5,10 +5,8 @@ function findFirstDuplicate(arr) {
     if (uniques.has(value)) {
       return value;
     }
-
     uniques.add(value);
   }
-
   return -1;
 }
 
@@ -43,11 +41,11 @@ module.exports = findFirstDuplicate;
 // Please add your pseudocode to this file
 /******************************************************************
  * initialize an empty set called uniques
- * 
+ *
  * iterate through the input array:
  *    if the value is in uniques, return the value
  *    else add the value to the set
- * 
+ *
  * return -1 if no duplicate found during iteration
  * ***************************************************************/
 
@@ -55,8 +53,8 @@ module.exports = findFirstDuplicate;
 /*******************************************************************
  * A Set is a data structure that contains only unique objects/values.
  * If I check if a value is in a Set before adding it, I'll know if there's
- * a duplicate. If there's a duplicate, I'll just return that value right 
+ * a duplicate. If there's a duplicate, I'll just return that value right
  * away because that'll be the first duplicate in the input array. If we
- * exit iteration without returning anything, that means there's no duplicate, 
+ * exit iteration without returning anything, that means there's no duplicate,
  * so we'll return -1
  * *******************************************************************/
